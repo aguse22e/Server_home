@@ -38,8 +38,10 @@ php -v | head -1; composer -V
 
 echo "== 3/6 Preview PPDB (statis) di Nginx =="
 $SUDO mkdir -p /var/www/ppdb
-# Versi demo dari repo (login demo admin@sekolah.sch.id / password).
+# Versi demo dari repo (akun demo tercantum di README repo PPDB_SEKOLAH).
 # Akun master HANYA ada di berkas preview lokalmu, tidak ikut ke server.
+# PENTING: sebelum preview dibuka ke internet, ganti password akun demo
+# atau nonaktifkan akun demo itu, dan jangan isi data siswa asli ke preview demo.
 curl -sL -o /tmp/ppdb-index.html \
   https://raw.githubusercontent.com/aguse22e/PPDB_SEKOLAH/main/index.html
 $SUDO cp /tmp/ppdb-index.html /var/www/ppdb/index.html
@@ -98,7 +100,9 @@ LAN_IP=$(hostname -I | awk '{print $1}')
 echo ""
 echo "================ SELESAI ================"
 echo "Preview PPDB di jaringan rumah:  http://$LAN_IP/"
-echo "Login demo: admin@sekolah.sch.id / password"
+echo "Login demo tercantum di README repo PPDB_SEKOLAH."
+echo "PENTING: sebelum dibuka ke internet, ganti password akun demo"
+echo "atau nonaktifkan akun demo itu, dan jangan isi data siswa asli."
 echo "Database: ppdb_db (kredensial di $HOME/.ppdb-db.txt)"
 echo ""
 echo "LANJUTAN — biar bisa dibuka dari mana saja (pilih salah satu):"

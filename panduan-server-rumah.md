@@ -63,13 +63,14 @@ ditutup (lihat langkah 7).
    Skrip memasang Nginx, PHP 8.3 + ekstensi Laravel, Composer 2, MySQL 8,
    firewall, cloudflared, dan Tailscale. Preview PPDB ikut terpasang.
 3. Buka di browser laptop: `http://192.168.1.50/` (ganti IP dengan IP
-   servermu). Preview PPDB harus tampil. Login demo:
-   **admin@sekolah.sch.id / password**.
+   servermu). Preview PPDB harus tampil. Login demo tercantum di README
+   repo PPDB_SEKOLAH.
 
-Keamanan: yang terpasang di server adalah versi demo dari repo publik
-(login demo di atas). Akun master hanya ada di berkas preview lokalmu dan
-tidak ikut ke server — memang begitu seharusnya untuk sesuatu yang dibuka
-ke internet.
+Keamanan: yang terpasang di server adalah versi demo dari repo publik.
+Akun master hanya ada di berkas preview lokalmu dan tidak ikut ke server
+— memang begitu seharusnya untuk sesuatu yang dibuka ke internet.
+Sebelum dibuka ke internet (langkah 5), ganti password akun demo atau
+nonaktifkan akun demo itu, dan jangan isi data siswa asli ke preview demo.
 
 ## 4. Cek cepat (kalau ada yang tidak tampil)
 

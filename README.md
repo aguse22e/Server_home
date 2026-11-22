@@ -12,7 +12,7 @@ Tanpa kartu, tanpa sewa bulanan.
    `scp -r server-rumah namamu@IP-SERVER:/tmp/`
 3. **Jalankan setup** di server: `cd /tmp/server-rumah && bash setup-server-rumah.sh`
 4. **Buka** `http://IP-SERVER/` — preview PPDB tampil
-   (login demo: admin@sekolah.sch.id / password).
+   (login demo tercantum di README repo PPDB_SEKOLAH).
 
 ## Buka ke internet (pilih satu)
 
